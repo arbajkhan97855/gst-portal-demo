@@ -1,0 +1,10 @@
+/* Notifications & Toast styles (Toasts disabled per design) */
+.toast-container {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.toast {
+  display: none !important;
+}

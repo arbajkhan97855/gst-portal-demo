@@ -1,0 +1,401 @@
+/* --- Official GST Portal Authenticated Dashboard Styles --- */
+.gov-dashboard-root {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d8e2ed;
+  padding: 24px 28px 36px 28px;
+  font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+}
+
+/* 1. Top Ledger Balance & Profile Section */
+.gov-top-grid {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.gov-ledger-col {
+  flex: 1 1 73%;
+  min-width: 0;
+}
+
+.gov-profile-col {
+  flex: 0 0 25%;
+  min-width: 240px;
+}
+
+.gov-section-header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #00a299;
+}
+
+.gov-section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.gov-header-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.gov-blue-link {
+  color: #0066cc;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.gov-blue-link:hover {
+  text-decoration: underline;
+  color: #004b99;
+}
+
+/* Ledger Balance Table */
+.gov-ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #d1d5db;
+}
+
+.gov-ledger-table thead tr {
+  background-color: #e2e8f0;
+}
+
+.gov-ledger-table th {
+  padding: 9px 12px;
+  font-weight: 700;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  font-size: 12.5px;
+}
+
+.gov-ledger-table th:not(:first-child) {
+  text-align: right;
+  width: 15%;
+}
+
+.gov-ledger-table td {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  font-size: 13px;
+}
+
+.gov-ledger-table td:not(:first-child) {
+  text-align: right;
+  font-weight: 600;
+}
+
+.gov-ledger-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.gov-ledger-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Right Taxpayer Side Card */
+.gov-taxpayer-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.gov-taxpayer-gstin {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.gov-taxpayer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #cbd5e1;
+  margin: 14px 0 12px 0;
+}
+
+.gov-tab-headers {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #cbd5e1;
+  margin-bottom: 12px;
+}
+
+.gov-tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 4px 2px 6px 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.gov-tab-btn.active {
+  color: #0066cc;
+  border-bottom: 2px solid #00a299;
+  font-weight: 700;
+}
+
+.gov-tab-content-text {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+/* 2. Middle Action Buttons (Image 2) */
+.gov-action-btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 32px 0;
+}
+
+.gov-primary-btn {
+  background-color: #204576;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 24px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.gov-primary-btn:hover {
+  background-color: #163256;
+}
+
+/* 3. Lower Turnover Section (Image 2 & Image 3) */
+.gov-turnover-header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #00a299;
+}
+
+.gov-turnover-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.gov-fy-select-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.gov-fy-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.gov-fy-select {
+  padding: 5px 12px;
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.gov-turnover-bar {
+  background-color: #e2e8f0;
+  padding: 9px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  border-radius: 2px;
+}
+
+.gov-amount-in-inr {
+  text-align: right;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #475569;
+  margin: 10px 0 6px 0;
+}
+
+.gov-turnover-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 14px;
+}
+
+.gov-turnover-table th {
+  background-color: #f1f5f9;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gov-turnover-table th:first-child {
+  width: 35%;
+  text-align: left;
+}
+
+.gov-turnover-table td {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.gov-turnover-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.gov-small-action-btn {
+  display: inline-block;
+  background-color: #204576;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.gov-small-action-btn:hover {
+  background-color: #163256;
+}
+
+.gov-methodology-link-row {
+  margin-bottom: 10px;
+}
+
+.gov-red-disclaimer {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 14px;
+}
+
+/* --- Official Turnover Declaration Page (image.png) --- */
+.turnover-box-info {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 14px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 24px;
+  font-size: 13px;
+  color: #1e293b;
+  margin: 14px 0 16px 0;
+}
+
+.turnover-box-info strong {
+  color: #0f172a;
+}
+
+.turnover-decl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.turnover-decl-table th {
+  background-color: #204576;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 12.5px;
+  border: 1px solid #163256;
+  text-align: center;
+}
+
+.turnover-decl-table td {
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  text-align: center;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.turnover-actions-strip {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.turnover-btn-navy {
+  background-color: #204576;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 18px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  transition: background-color 0.15s;
+}
+
+.turnover-btn-navy:hover {
+  background-color: #163256;
+}
+
+.turnover-btn-disabled {
+  background-color: #cbd5e1;
+  color: #64748b;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 18px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: not-allowed;
+  text-transform: uppercase;
+}

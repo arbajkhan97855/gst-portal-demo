@@ -1,0 +1,153 @@
+/* Responsive Layout Rules */
+
+/* Large Desktops (1440px+) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+/* Standard Desktops & Laptops (1025px - 1280px) */
+@media (max-width: 1280px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop.active {
+    display: block;
+  }
+
+  .main-content {
+    padding: 20px 16px;
+    width: 100%;
+  }
+
+  .grid-2col, .grid-3col {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-3, .form-row-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .topbar {
+    display: none; /* Hide topbar on mobile to save vertical viewport */
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .page-actions {
+    width: 100%;
+  }
+
+  .page-actions .btn {
+    flex: 1;
+  }
+
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row, .form-row-3, .form-row-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .taxpayer-banner {
+    padding: 16px;
+  }
+
+  .taxpayer-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .quick-actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table td, .table th {
+    padding: 10px 12px;
+  }
+
+  .modal-dialog {
+    width: 94% !important;
+    margin: 12px auto;
+  }
+
+  .stat-card {
+    padding: 14px 16px;
+  }
+}
+
+/* Small Mobile (<= 380px) */
+@media (max-width: 380px) {
+  .brand-title {
+    font-size: 1rem;
+  }
+  .brand-subtitle {
+    display: none;
+  }
+  .quick-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}

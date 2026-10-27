@@ -1,0 +1,17 @@
+/* Main Stylesheet Bundler (Static CSS only) */
+@import "./styles/variables.css";
+@import "./styles/gst-portal.css";
+@import "./styles/global.css";
+@import "./styles/navbar.css";
+@import "./styles/sidebar.css";
+@import "./styles/buttons.css";
+@import "./styles/forms.css";
+@import "./styles/cards.css";
+@import "./styles/tables.css";
+@import "./styles/dashboard.css";
+@import "./styles/responsive.css";
+@import "./styles/auth.css";
+@import "./styles/modal.css";
+@import "./styles/notifications.css";
+@import "./styles/pages.css";
+@import "./styles/admin.css";

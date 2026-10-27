@@ -1,0 +1,8 @@
+{
+  "name": "GST Tax Services Portal — Training \u0026 Demo Platform",
+  "description": "Enterprise-grade GST Tax Services, Returns Filing, Registration, Invoicing and Compliance Training Portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
